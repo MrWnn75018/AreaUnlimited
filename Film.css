@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Nécessaire pour que le z-index fonctionne correctement sur les éléments enfants */
+    height: auto; /* Changez à auto pour que le corps grandisse avec le contenu */
+    min-height: 100vh; /* Assurez-vous que le corps prend au moins la hauteur de la fenêtre */
+}
+
+#Film-titre {
+    color: rgb(206, 206, 245);
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 4em; /* Définit la taille du texte (vous pouvez ajuster cette valeur) */
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre au texte */
+    z-index: 0; 
+}
+
+/* Réglages fond d'écran */
+.background {
+    position: absolute; /* Positionne le fond par rapport au body */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Film.png"); /* Chemin relatif vers votre image de fond */
+    background-size: auto; /* Utilisez auto pour garder la taille d'origine */
+    background-repeat: repeat; /* Répète l'image dans toutes les directions */
+    background-position: top left; /* Positionne l'image en haut à gauche */
+    z-index: -1; /* Place l'image de fond derrière le contenu */ 
+}
+
+/* Style pour le tableau */
+table {
+    width: 80%;
+    margin: 20px auto; /* Centre le tableau */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Bordure des cellules */
+    padding: 15px; /* Espacement intérieur */
+    text-align: center; /* Centre le texte dans les cellules */
+}
+
+th {
+    background-color: rgba(206, 206, 245, 0.8); /* Fond légèrement coloré pour les en-têtes */
+}
+
+td img {
+    max-width: 100%; /* Ajuste les images à la taille des cellules */
+    height: auto; /* Conserve le ratio de l'image */
+}

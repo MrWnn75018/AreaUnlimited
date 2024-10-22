@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝒜𝓇𝑒𝒶𝒰𝓃𝓁𝒾𝓂𝒾𝓉𝑒𝒹</title>
+    <link rel="stylesheet" href="AreUnlimited.css">
+    <link rel="stylesheet" href="AreaUnlimited_style2.css" id="theme">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <header>
+        <h1 id="site-title">𝒜𝓇𝑒𝒶𝒰𝓃𝓁𝒾𝓂𝒾𝓉𝑒𝒹</h1>
+        <nav class="categories">
+            <ul class="category-list">
+                <li><a href="../Categorie films/Film.html">Films</a></li>
+                <li><a href="series.html">Séries</a></li>
+                <li><a href="animes.html">Animés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteneur de la vidéo -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="Solo Leveling _ OFFICIAL TEASER.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Images et liens supplémentaires -->
+    <div class="image-container image-top">
+        <a href="https://www.youtube.com/watch?v=RO3Qp_XdR0w" target="_blank">Vampire Diaries</a>
+    </div>
+
+    <div class="image-container image-bottom">
+        <a href="https://www.youtube.com/watch?v=sDOWgRpgc3w" target="_blank">You Season 2</a>
+    </div>
+
+    <!-- Formulaire d'inscription à la lettre d'information avec des champs supplémentaires -->
+    <div class="newsletter-form">
+        <h2>Inscription à la Newsletter</h2>
+        <form>
+            <!-- Champs de texte -->
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Cases à cocher -->
+            <label>Choisissez vos préférences :</label>
+            <div>
+                <input type="checkbox" id="films" name="preference" value="films">
+                <label for="films">Films</label>
+            </div>
+            <div>
+                <input type="checkbox" id="series" name="preference" value="series">
+                <label for="series">Séries</label>
+            </div>
+            <div>
+                <input type="checkbox" id="animes" name="preference" value="animes">
+                <label for="animes">Animés</label>
+            </div>
+
+            <!-- Boutons radio -->
+            <label>Genre préféré :</label>
+            <div>
+                <input type="radio" id="action" name="genre" value="action">
+                <label for="action">Action</label>
+            </div>
+            <div>
+                <input type="radio" id="romance" name="genre" value="romance">
+                <label for="romance">Romance</label>
+            </div>
+            <div>
+                <input type="radio" id="horror" name="genre" value="horror">
+                <label for="horror">Horreur</label>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p><a href="lien_vers_votre_formulaire.html">Consultez nos formulaires</a></p>
+    </div>
+
+    <!-- Liens vers des sites externes -->
+    <footer>
+        <p>Découvrez plus de films sur <a href="https://www.allocine.fr" target="_blank">Allociné</a>.</p>
+        <p>Découvrez plus de séries sur <a href="https://www.netflix.com/fr/browse/genre/839338" target="_blank">Netflix</a></p>
+    </footer>
+
+    <!-- Bouton pour changer de style -->
+    <button id="style-button" onclick="changeStyle()">Changer de style</button>
+
+    <script src="AreaUnlimited.script.js"></script>
+    <script>
+        function changeStyle() {
+            var link = document.getElementById("theme");
+            link.href = link.href.includes("AreUnlimited.css") ? "AreaUnlimited_style2.css" : "AreUnlimited.css";
+        }
+    </script>
+
+</body>
+</html>
